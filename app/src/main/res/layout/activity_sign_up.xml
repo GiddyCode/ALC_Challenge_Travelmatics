@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign"
+    tools:context=".SignUp_Activity">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/Username_text"
+        android:hint="Username"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="@+id/Email_text"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/Email_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/Email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Email"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Username_text" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/Password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:hint="Password"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/Email_text"
+        app:layout_constraintStart_toStartOf="@+id/Email_text"
+        app:layout_constraintTop_toBottomOf="@+id/Email_text" />
+
+    <Button
+        android:id="@+id/Save_for_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/round_background_for_button_black"
+        android:text="Create"
+        android:textColor="@color/whit"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Password_text"
+        app:layout_constraintTop_toBottomOf="@+id/Password_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
